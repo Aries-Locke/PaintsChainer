@@ -36,6 +36,7 @@ def cvt2GRAY(img):
         return cv2.cvtColor(img2, cv2.COLOR_RGB2GRAY)
     else:
         # RGB image
+        return cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 
 class ImageAndRefDataset(chainer.dataset.DatasetMixin):
 
